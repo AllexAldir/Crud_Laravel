@@ -12,14 +12,17 @@ $('#idDinamico1').on('click', function () {
 
 	//if (arrayId.length == 0) return alert('ERRO Array vazia')
 
-	$.ajax({
-		url:`item`,
-		method:'GET',
-		success: function(){
-			console.log('Enviado com sucesso')
-		},
-		error: function(e){
-			console.error(`Erro na requisição: ${e}`);
-		}
-	});
+	// $.ajax({
+	// 	url:`item`,
+	// 	method:'GET',
+	// 	headers: {
+	// 		'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+	// },
+	// 	success: function(){
+	// 		console.log('Enviado com sucesso')
+	// 	},
+	// 	error: function(e){
+	// 		console.error(`Erro na requisição: ${e}`);
+	// 	}
+	// });
 })
