@@ -21,7 +21,7 @@
             </div>
             <div class="card-body">
                 {{-- <p class="login-box-msg">começar</p> --}}
-                <form action="{{url('/home')}}" method="POST">
+                <form action="{{url('produtos')}}" method="POST">
                     @csrf
                     <!-- {{ csrf_field() }} -->
                     <div class="input-group mb-3">

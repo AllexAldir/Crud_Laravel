@@ -16,4 +16,7 @@ Route::post('register/form', [FormController::class, 'telaHomeCreate']);
 
 Route::get('chart', [TicketController::class, 'chart']);
 
+Route::post('produtos', [TicketController::class, 'produto']); //-> Rota para vizualizar produto futuramente mudar o método para trazer informções do banco
+Route::get('produtos', [TicketController::class, 'produto']); //-> Rota para vizualizar produto futuramente mudar o método para trazer informções do banco
 
+Route::get('item', [TicketController::class, 'produtoID']);
