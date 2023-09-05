@@ -4,7 +4,7 @@
         'link' => ['']
       ],
       'body' => [
-        'script' => ['dist/js/produtos.js']
+        'script' => ['dist/js/produtos.js','plugins/jquery/jquery.min.js']
         
       ]
   ],
@@ -20,7 +20,7 @@
 			<h2>Produto 1</h2>
 			<p>Descrição do Produto 1.</p>
 			<p class="price">R$19.99</p>
-			<a href="{{url('item')}}"><button id="idDinamico1"  class="add-to-cart">Ver item</button></a>
+			<a href="{{url('produtos/item')}}"><button id="idDinamico1"  class="add-to-cart">Ver item</button></a>
 	</div>
 
 	{{-- <div class="product">

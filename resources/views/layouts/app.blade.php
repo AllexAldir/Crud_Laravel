@@ -12,6 +12,30 @@
     <link rel="stylesheet" href="{{asset('maincss/products.css')}}">
 		<script src="{{asset('dist/js/charts.min.js')}}"></script>
     
+
+      {{-- * INÍCIO - Módulos Gerais Habilidados * --}}
+    @isset($module)
+      @isset($module['head'])
+        @foreach ($module['head'] as $key => $item)
+          @switch($key)
+            @case('link')
+              @foreach ($item as $link)
+                <link rel="stylesheet" href="{{ asset($link) }}">
+              @endforeach
+            @break
+
+            @case('script')
+              @foreach ($item as $script)
+                <script src="{{ asset($script) }}"></script>
+              @endforeach
+            @break
+          @endswitch
+        @endforeach
+      @endisset
+    @endisset
+{{-- * FIM - Módulos Gerais Habilidados * --}}
+
+
   </head>
   <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
@@ -869,12 +893,29 @@
     </div>
 		
 
+    {{-- * INÍCIO - Módulos Gerais Habilidados * --}}
+    @isset($module)
+      @isset($module['body'])
+        @foreach ($module['body'] as $key => $item)
+          @switch($key)
+            @case('script')
+              @foreach ($item as $script)
+                <script src="{{ asset($script) }}"></script>
+              @endforeach
+            @break
+          @endswitch
+        @endforeach
+      @endisset
+    @endisset
+ {{-- * FIM - Módulos Gerais Habilidados * --}}
+
+
     <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
     <script src="{{asset('dist/js/adminlte.min.js?v=3.2.0')}}"></script>
     <script src="{{asset('dist/js/demo.js')}}"></script>	
-    <script src="{{asset('dist/js/produtos.js')}}"></script>
+    {{-- <script src="{{asset('dist/js/produtos.js')}}"></script> --}}
 
   </body>
 

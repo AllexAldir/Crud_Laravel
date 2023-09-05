@@ -20,11 +20,11 @@
                     </div> --}}
                 </div>
                 <div class="col-12 col-sm-6">
-                    <h3 class="my-3">LOWA Men’s Renegade GTX Mid Hiking Boots Review</h3>
+                    <h3 class="my-3">IteM title</h3>
                     <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terr.</p>
                     <hr>
-                    <h4>Available Colors</h4>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    {{-- <h4>Available Colors</h4> --}}
+                    {{-- <div class="btn-group btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-default text-center active">
                             <input type="radio" name="color_option" id="color_option_a1" autocomplete="off" checked="">
                             Green
@@ -55,9 +55,9 @@
                             <br>
                             <i class="fas fa-circle fa-2x text-orange"></i>
                         </label>
-                    </div>
-                    <h4 class="mt-3">Size <small>Please select one</small></h4>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    </div> --}}
+                    {{-- <h4 class="mt-3">Size <small>Please select one</small></h4> --}}
+                    {{-- <div class="btn-group btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-default text-center">
                             <input type="radio" name="color_option" id="color_option_b1" autocomplete="off">
                             <span class="text-xl">S</span>
@@ -82,7 +82,7 @@
                             <br>
                             Xtra-Large
                         </label>
-                    </div>
+                    </div> --}}
                     <div class="bg-gray py-2 px-3 mt-4">
                         <h2 class="mb-0">
                             $80.00

@@ -1,3 +1,7 @@
+$(()=>{
+	alert('okad')
+})
+
 $('#idDinamico1').on('click', function () {
 	//-> Pegará o id de cada um dos produtos para serem enviados para outra página
 	// let arrayId = [];
