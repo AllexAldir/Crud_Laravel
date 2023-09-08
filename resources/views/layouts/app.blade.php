@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="{{asset('maincss/products.css')}}">
 		<script src="{{asset('dist/js/charts.min.js')}}"></script>
     
-
-      {{-- * INÍCIO - Módulos Gerais Habilidados * --}}
+      
+    {{-- * INÍCIO - Módulos Gerais Habilidados * --}}
     @isset($module)
       @isset($module['head'])
         @foreach ($module['head'] as $key => $item)
@@ -34,7 +34,6 @@
       @endisset
     @endisset
 {{-- * FIM - Módulos Gerais Habilidados * --}}
-
 
   </head>
   <body class="hold-transition sidebar-mini layout-fixed">
@@ -915,7 +914,8 @@
     <script src="{{asset('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
     <script src="{{asset('dist/js/adminlte.min.js?v=3.2.0')}}"></script>
     <script src="{{asset('dist/js/demo.js')}}"></script>	
-    {{-- <script src="{{asset('dist/js/produtos.js')}}"></script> --}}
+    <script src="{{asset('dist/js/produtos.js')}}"></script>
+    <script src="{{asset('plugins/jquery/jquery.slim.min.js')}}"></script>
 
   </body>
 
