@@ -16,7 +16,7 @@
                 <a href="javascript:void(0)" class="h1">Fantasia</a>
             </div>
             <div class="card-body">
-								
+
                 {{-- <p class="login-box-msg">Cadastre-se</p> --}}
                 <form action="{{url('register/form')}}" method="post">
 										@csrf
@@ -67,7 +67,7 @@
                         <div class="col-4">
                             <button type="submit" class="btn btn-primary btn-block">Register</button>
                         </div>
-
+                        <span style="color: red">{{session('mensagem')}}</span>
                     </div>
                 </form>
                 {{-- <div class="social-auth-links text-center">
